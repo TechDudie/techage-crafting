@@ -5,23 +5,35 @@ function url(item) {
 function img(img_url) {
   return "<img src=\"" + img_url + "\">"
 }
-function table(a,b,c, d,e,f, g,h,i) {
+function h3(text) {
+  return "<h3>" + text + "</h3>"
+}
+function p(text) {
+  return "<p>" + text + "</p>"
+}
+function table(items) {
   var text = "<table><tr>"
-  text += "<td>" + a + "</td>"
-  text += "<td>" + b + "</td>"
-  text += "<td>" + c + "</td>"
+  text += "<td>" + items[0] + "</td>"
+  text += "<td>" + items[1] + "</td>"
+  text += "<td>" + items[2] + "</td>"
   text += "</tr><tr>"
-  text += "<td>" + d + "</td>"
-  text += "<td>" + e + "</td>"
-  text += "<td>" + f + "</td>"
+  text += "<td>" + items[3] + "</td>"
+  text += "<td>" + items[4] + "</td>"
+  text += "<td>" + items[5] + "</td>"
   text += "</tr><tr>"
-  text += "<td>" + g + "</td>"
-  text += "<td>" + h + "</td>"
-  text += "<td>" + i + "</td>"
+  text += "<td>" + items[6] + "</td>"
+  text += "<td>" + items[7] + "</td>"
+  text += "<td>" + items[8] + "</td>"
   text += "</tr>"
   text += "</table>"
   return text
 }
-function recipe(a,b,c, d,e,f, g,h,i) {
-  //
+function recipe(items, result) {
+  var i;
+  for (i = 0; i < items.length; i++) {
+    items[i] = img(url(items[i]))
+  }
+  list += h3(result)
+  list += img(url(result))
+  list += table(items)
 }
