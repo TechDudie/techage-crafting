@@ -1,3 +1,4 @@
+alert("hi"); //debug
 var list = document.getElementById("list").innerHTML;
 function techage_mod(item) {
   return "https://raw.githubusercontent.com/joe7575/techage/master/textures/" + item + ".png";
