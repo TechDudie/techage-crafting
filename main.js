@@ -49,12 +49,10 @@ function recipe(itm, result) {
   var html = "";
   var url;
   var i;
-  alert("vars done")
   for (i = 0; i < items.length; i++) {
     url = mod(items[i]);
     items[i] = img(url(items[i].split(".")[1]));
   }
-  alert("boo")
   url = mod(result);
   html += h3(result.split(".")[1]);
   html += img(url(result.split(".")[1]));
@@ -62,5 +60,4 @@ function recipe(itm, result) {
   alert(html); //debug
   return html;
 }
-alert("funcs defined")
 add(recipe(["DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt"],"DF.default_dirt"));
