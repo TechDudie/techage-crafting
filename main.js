@@ -55,6 +55,7 @@ function recipe(items, result) {
   html += h3(result);
   html += img(url(result));
   html += table(items);
+  alert(html) //debug
   return html
 }
 list += recipe(["DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt"],"DF.dirt")
