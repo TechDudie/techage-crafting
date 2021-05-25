@@ -16,7 +16,7 @@ function h3(text) {
 function p(text) {
   return "<p>" + text + "</p>";
 }
-function table(items) {
+function table(items, result) {
   var text = "<table><tr>";
   text += "<td>" + items[0] + "</td>";
   text += "<td>" + items[1] + "</td>";
@@ -25,6 +25,8 @@ function table(items) {
   text += "<td>" + items[3] + "</td>";
   text += "<td>" + items[4] + "</td>";
   text += "<td>" + items[5] + "</td>";
+  text += "<td><h1>&#8594</h1></td>";
+  text += "<td>" + result + "</td>";
   text += "</tr><tr>";
   text += "<td>" + items[6] + "</td>";
   text += "<td>" + items[7] + "</td>";
@@ -55,8 +57,7 @@ function recipe(itm, result) {
   }
   url = mod(result);
   html += h3(result.split(".")[1]);
-  html += img(url(result.split(".")[1]));
-  html += table(items);
+  html += table(items, result.split(".")[1]);
   alert(html); //debug
   return html;
 }
