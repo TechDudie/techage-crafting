@@ -25,7 +25,7 @@ function table(items, result) {
   text += "<td>" + items[3] + "</td>";
   text += "<td>" + items[4] + "</td>";
   text += "<td>" + items[5] + "</td>";
-  text += "<td><h1>&#8594</h1></td>";
+  text += "<td>&#8594</td>";
   text += "<td>" + result + "</td>";
   text += "</tr><tr>";
   text += "<td>" + items[6] + "</td>";
