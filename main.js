@@ -62,4 +62,4 @@ function recipe(itm, result) {
   return html;
 }
 alert("funcs defined")
-list += recipe(["DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt"],"DF.dirt");
+list += recipe(["DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt"],"DF.default_dirt");
