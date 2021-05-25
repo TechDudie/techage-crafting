@@ -1,4 +1,4 @@
-alert("hi"); //debug
+alert("hi");
 var list = document.getElementById("list").innerHTML;
 function techage_mod(item) {
   return "https://raw.githubusercontent.com/joe7575/techage/master/textures/" + item + ".png";
@@ -48,10 +48,12 @@ function recipe(itm, result) {
   var html = "";
   var url;
   var i;
+  alert("vars done")
   for (i = 0; i < items.length; i++) {
     url = mod(items[i]);
     items[i] = img(url(items[i]));
   }
+  alert("boo")
   url = mod(result);
   html += h3(result);
   html += img(url(result));
@@ -59,4 +61,5 @@ function recipe(itm, result) {
   alert(html); //debug
   return html;
 }
+alert("funcs defined")
 list += recipe(["DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt"],"DF.dirt");
