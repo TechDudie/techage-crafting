@@ -1,5 +1,7 @@
 alert("hi");
-var list = document.getElementById("list").innerHTML;
+function add(html) {
+  document.getElementById("list").innerHTML += html;
+}
 function techage_mod(item) {
   return "https://raw.githubusercontent.com/joe7575/techage/master/textures/" + item + ".png";
 }
@@ -62,4 +64,4 @@ function recipe(itm, result) {
   return html;
 }
 alert("funcs defined")
-list += recipe(["DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt"],"DF.default_dirt");
+add(recipe(["DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt"],"DF.default_dirt"));
