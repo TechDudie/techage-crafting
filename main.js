@@ -56,8 +56,8 @@ function recipe(itm, result) {
   }
   alert("boo")
   url = mod(result);
-  html += h3(result);
-  html += img(url(result));
+  html += h3(result.split(".")[1]);
+  html += img(url(result.split(".")[1]));
   html += table(items);
   alert(html); //debug
   return html;
