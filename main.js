@@ -36,15 +36,15 @@ function mod(itemstring) {
   var mod = itemstring.split(".")[0];
   var url = null;
   if (mod == "TA") {
-    url == techage_mod;
+    url = techage_mod;
   }
   if (mod == "DF") {
-    url == default_mod;
+    url = default_mod;
   }
   return url;
 }
-function recipe(items, result) {
-  var items = items;
+function recipe(itm, result) {
+  var items = itm; //copy
   var html = "";
   var url;
   var i;
