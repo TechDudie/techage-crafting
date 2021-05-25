@@ -1,4 +1,3 @@
-alert("hi");
 function add(html) {
   document.getElementById("list").innerHTML += html;
 }
@@ -53,7 +52,7 @@ function recipe(itm, result) {
   alert("vars done")
   for (i = 0; i < items.length; i++) {
     url = mod(items[i]);
-    items[i] = img(url(items[i]));
+    items[i] = img(url(items[i].split(".")[1]));
   }
   alert("boo")
   url = mod(result);
