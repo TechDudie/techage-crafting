@@ -61,4 +61,4 @@ function recipe(itm, result) {
   alert(html); //debug
   return html;
 }
-add(recipe(["DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt","DF.default_dirt"],"DF.default_dirt"));
+add(recipe(["DF.default_cobble","DF.default_copper_ingot","DF.default_cobble","DF.default_cobble","DF.air","DF.default_cobble","DF.default_cobble","DF.default_cobble","DF.default_cobble"],"TA.techage_meltingpot"));
