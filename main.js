@@ -44,6 +44,7 @@ function mod(itemstring) {
 }
 function recipe(items, result) {
   var items = items;
+  var html = "";
   var url;
   var i;
   for (i = 0; i < items.length; i++) {
@@ -51,7 +52,9 @@ function recipe(items, result) {
     items[i] = img(url(items[i]));
   }
   url = mod(result);
-  list += h3(result);
-  list += img(url(result));
-  list += table(items);
+  html += h3(result);
+  html += img(url(result));
+  html += table(items);
+  return html
 }
+list += recipe(["DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt","DF.dirt"],"DF.dirt")
