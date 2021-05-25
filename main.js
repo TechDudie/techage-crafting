@@ -57,7 +57,7 @@ function recipe(itm, result) {
   }
   url = mod(result);
   html += h3(result.split(".")[1]);
-  html += table(items, img(url(result.split(".")[1])););
+  html += table(items, img(url(result.split(".")[1])));
   alert(html); //debug
   return html;
 }
