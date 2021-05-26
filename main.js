@@ -44,19 +44,22 @@ function mod(itemstring) {
   }
   return url;
 }
-function recipe(itm, result) {
+function recipe(title,type,itm, result) {
   var items = itm; //copy
   var html = "";
   var url;
   var i;
   for (i = 0; i < items.length; i++) {
+    if (items[i] == "") {
+      continue;
+    }
     url = mod(items[i]);
     items[i] = img(url(items[i].split(".")[1]));
   }
-  url = mod(result);
+  url = mod(title);
   html += h3(result.split(".")[1]);
   html += table(items, img(url(result.split(".")[1])));
   alert(html); //debug
   return html;
 }
-add(recipe(["DF.default_cobble","DF.default_copper_ingot","DF.default_cobble","DF.default_cobble","DF.","DF.default_cobble","DF.default_cobble","DF.default_cobble","DF.default_cobble"],"TA.techage_meltingpot"));
+add(recipe("Melting Pot","crafting",["DF.default_cobble","DF.default_copper_ingot","DF.default_cobble","DF.default_cobble","","DF.default_cobble","DF.default_cobble","DF.default_cobble","DF.default_cobble"],"TA.techage_meltingpot"));
