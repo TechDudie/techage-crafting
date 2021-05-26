@@ -25,8 +25,6 @@ function table(items, result) {
   text += "<td>" + items[3] + "</td>";
   text += "<td>" + items[4] + "</td>";
   text += "<td>" + items[5] + "</td>";
-  text += "<td>&#8594</td>";
-  text += "<td>" + result + "</td>";
   text += "</tr><tr>";
   text += "<td>" + items[6] + "</td>";
   text += "<td>" + items[7] + "</td>";
@@ -61,4 +59,4 @@ function recipe(itm, result) {
   alert(html); //debug
   return html;
 }
-add(recipe(["DF.default_cobble","DF.default_copper_ingot","DF.default_cobble","DF.default_cobble","DF.air","DF.default_cobble","DF.default_cobble","DF.default_cobble","DF.default_cobble"],"TA.techage_meltingpot"));
+add(recipe(["DF.default_cobble","DF.default_copper_ingot","DF.default_cobble","DF.default_cobble","DF.","DF.default_cobble","DF.default_cobble","DF.default_cobble","DF.default_cobble"],"TA.techage_meltingpot"));
